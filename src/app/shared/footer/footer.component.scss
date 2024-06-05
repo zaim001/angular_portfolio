@@ -1,0 +1,66 @@
+
+.fixed-bottom {
+    position: fixed;
+    bottom: 0;
+    right: 93%; /* Adjust if needed */ /* Adjust if needed */
+    z-index: 1000; /* Adjust the z-index if necessary */
+    padding: 10px 20px; /* Adjust padding as needed */
+    display: flex;
+    flex-direction: column; /* Display icons vertically */
+    align-items: flex-end; /* Align icons to the right */
+}
+
+.fixed-bottom .h-6 {
+    width: 1px; /* Adjust the width of the vertical line */
+    height: 20px; /* Adjust the height of the vertical line */
+    background-color: #fff; /* Adjust the color of the vertical line */
+    margin: 5px 0 ; /* Adjust the spacing between the icons and the vertical lines */
+
+}
+
+.fixed-bottom a {
+    color: white; /* Adjust text color */
+    margin-bottom: 10px; /* Adjust margin between icons */
+}
+
+.fixed-bottom a:hover {
+    color: #007bff; /* Adjust hover color */
+}
+i{
+    margin-left: -10px;
+}
+.text-rotate-90 {
+    writing-mode: vertical-rl; /* Rotate text 90 degrees */
+    transform: rotate(-90deg); /* Fix for Firefox */
+}
+
+.footer-right-bar:after{
+    content: '';
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin: 0 auto;
+    background-color: white;
+}
+.footer-right-bar{
+    position: fixed;
+    bottom: 0px;
+    right: 41px;
+    padding: 0;
+
+    li{
+        transform: rotate(90deg);
+    }
+
+    a{
+        font-family: Monospace;
+        font-size: 17px;
+        letter-spacing: 0.2em;
+        -webkit-writing-mode: vertical-rl;
+        -ms-writing-mode: tb-rl;
+        writing-mode: vertical-rl;
+        margin: 18px auto;
+        padding: 8x;
+        color: white;
+    }
+}

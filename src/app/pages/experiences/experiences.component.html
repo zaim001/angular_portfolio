@@ -1,0 +1,52 @@
+<div class="container">
+    <h1>Experience</h1>
+    <div class="main-timeline">
+            @for (exp of experiences; track $index;let count = $count) {
+                            <!-- start experience section-->
+                            @if (isOdd($index)) {
+<div class="timeline">
+                                <div class="icon"></div>
+                                <div class="date-content">
+                                    <div class="date-outer">
+                                        <span class="date">
+                                                <span class="month">{{exp.duration}}</span>
+                                        <span class="year">{{exp.year}}</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="timeline-content">
+                                    <h5 class="title">{{exp.title}}</h5>
+                                    <p class="description">
+                                        {{exp.description}}
+                                    </p>
+                                </div>
+                            
+                            </div>
+}
+                            <!-- end experience section-->
+                            
+                            <!-- start experience section -->
+                            @if (!isOdd($index)) {
+<div class="timeline">
+                                <div class="icon"></div>
+                                <div class="date-content">
+                                    <div class="date-outer">
+                                        <span class="date">
+                                                <span class="month">{{exp.duration}}</span>
+                                        <span class="year">{{exp.year}}</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="timeline-content">
+                                    <h5 class="title">{{exp.title}}</h5>
+                                    <p class="description">
+                                       {{exp.description}}
+                                    </p>
+                                </div>
+                            </div>
+}
+                        }
+                           
+    
+                        </div>
+    </div>

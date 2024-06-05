@@ -1,0 +1,20 @@
+<div class="container">   
+   
+  <h1>Education</h1>                  
+  <div class="row">
+      <div class="col">
+          <div class="timeline-steps aos-init aos-animate" data-aos="fade-up">
+            @for (studie of studies; track $index){ 
+              <div class="timeline-step">
+                  <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" >
+                      <div class="inner-circle"></div>
+                      <p class="h6 mt-3 mb-1">{{studie.date}}</p>
+                      <p class="h6 text-muted mb-0 mb-lg-0">{{studie.school}}</p>
+                      <small>{{studie.major}}</small>
+                  </div>
+              </div>
+            }
+          </div>
+      </div>
+  </div>
+</div>
