@@ -1,20 +1,39 @@
-<div class="container">   
-   
-  <h1>Education</h1>                  
-  <div class="row">
-      <div class="col">
-          <div class="timeline-steps aos-init aos-animate" data-aos="fade-up">
-            @for (studie of studies; track $index){ 
-              <div class="timeline-step">
-                  <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" >
-                      <div class="inner-circle"></div>
-                      <p class="h6 mt-3 mb-1">{{studie.date}}</p>
-                      <p class="h6 text-muted mb-0 mb-lg-0">{{studie.school}}</p>
-                      <small>{{studie.major}}</small>
-                  </div>
-              </div>
-            }
-          </div>
-      </div>
-  </div>
+<div class="timeline" style="--items: 7;" id="education">
+ <h1>Education</h1>
+  <ul>
+    <li style="--index: 1">
+      <h3>2015</h3>
+      <p>CHIWEN B.V. established</p>
+    </li>
+    <li style="--index: 2">
+      <h3>2016</h3>
+      <p>Established long-term research partnership with University of Groningen</p>
+    </li>
+    <li style="--index: 3">
+      <h3>2017</h3>
+      <p>Research on machine learning, deep learning, distributed training, brain-inspired pattern recognition algorithms, Neo4J and Blockchain, and distributed computing</p>
+    </li>
+    <li style="--index: 4">
+      <h3>2018 Jan-Mar</h3>
+      <p>Started TuDoLink project Team building Project Feasibility Analysis</p>
+    </li>
+    <li style="--index: 5">
+      <h3>2018 Apr-Jul</h3>
+      <p>
+        System Framework Design Social Interaction Optimize Partnerships Optimize Business Plan Seed Funding Prepare MVP Prepare Pre-ICO Active on Social Media
+      </p>
+    </li>
+    <li style="--index: 6">
+      <h3>2018 Aug-Dec</h3>
+      <p>
+        MVP Development Collect Feedbacks of MVP Improve and Update MVP Optimize Team Development Optimize Business Development Release System Beta V1.0 System Testing Prepare ICO Prepare to List
+      </p>
+    </li>
+    <li style="--index: 7">
+      <h3>2019 Jan-Jun</h3>
+      <p>
+        ICO List Tokens Release APP & Trading Platform V1.0 Works on most of CPUs, GPUs, VPUS Distribute Globally
+      </p>
+    </li>
+  </ul>
 </div>

@@ -1,24 +1,65 @@
-
-section{
-  margin-top: -230px;
-  margin-bottom: -200px;
-}
-
-h1{
+h1 {
   color: white;
   margin-bottom: 20px;
 }
-p{
+
+p {
   color: white;
 }
-.btn{
+
+.btn {
   color: white;
   border-color: aliceblue;
 }
 
-.hero-section .container {
-  font-family: Calibre,system-ui,BlinkMacSystemFont,Roboto,Helvetica Neue,Segoe UI,Arial,sans-serif;
-  display: flex;
-  justify-content: flex-start;
-  
+
+.hero-section {
+ position: relative;
+ top:0;
+
+  .container {
+    font-family: Calibre, system-ui, BlinkMacSystemFont, Roboto, Helvetica Neue, Segoe UI, Arial, sans-serif;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: -200px;
+    
+  }
+}
+
+/* Adjust margin for smaller screens if needed */
+@media (max-width: 768px) {
+  .hero-section {
+    padding-top: 20px; /* Adjust margin for smaller screens */
+    margin-top: 20px;
+  }
+}
+.scroll-down {
+  position: absolute;
+  bottom: 150px; /* Adjust based on your design */
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 24px; /* Adjust size as needed */
+  color: white; /* Adjust color as needed */
+  animation: bounce 2s infinite;
+  cursor: pointer;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+/* Ensure the icon is visible on small screens */
+@media (max-width: 768px) {
+  .scroll-down {
+    font-size: 20px; /* Adjust size as needed for smaller screens */
+  }
 }
