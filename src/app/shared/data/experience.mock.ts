@@ -6,19 +6,19 @@ export const EXPERIENCES: Experience[] = [
         title: "Web Designer",
         year:  "2021", 
         duration: "1 month",
-        description: "Test Description Test Description Test Description Test DescriptionTest DescriptionTest DescriptionTest DescriptionTest DescriptionTest DescriptionTest DescriptionTest Description"
+        description: "An initiation internship with the creation of a website for the company using Wordpress."
     },
     {
         title: "Web Developer",
         year:  "2023", 
         duration: "2 months",
-        description: "Test Description 2 Test Description Test Description Test DescriptionTest DescriptionTest DescriptionTest DescriptionTest Description"
+        description: "An 8-week internship at the Ministry of Tourism, Handicrafts, and Social and Solidarity Economy of Morocco",
     },
     {
-        title: "Web Developer",
+        title: "Software Integration Developer",
         year:  "2023", 
         duration: "2 months",
-        description: "Test Description 3 Test DescriptionTest DescriptionTest DescriptionTest DescriptionTest Description Test DescriptionTest DescriptionTest Description Test DescriptionTest DescriptionTest DescriptionTest Description"
+        description: "A 2-month professional internship at the National Center for Scientific and Technical Research (CNRST) during which I was responsible for implementing a Single Sign-On (SSO) authentication system using CAS (Central Authentication Service)"
     },
 
 ];

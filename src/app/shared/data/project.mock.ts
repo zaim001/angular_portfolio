@@ -10,7 +10,7 @@ export const PROJECTS: Project[] = [
     website: "https://www.google.com",
     github: "https://www.github.com",
     image:"https://s3-us-west-2.amazonaws.com/s.cdpn.io/326643/Sample%20Logo.png",
-    status: "In Development"
+    status: "InDev"
   },
   {
     project: "Project XYZ",
@@ -28,7 +28,7 @@ export const PROJECTS: Project[] = [
     website: "https://www.google.com",
     github: "https://www.github.com",
     image:"https://s3-us-west-2.amazonaws.com/s.cdpn.io/326643/Sample%20Logo.png",
-    status: "In Development"
+    status: "InDev"
   },
   {
     project: "Project XYZ",

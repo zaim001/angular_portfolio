@@ -4,13 +4,9 @@ body {
 }
 
 .timeline {
-  --accent: #02d664;
-  --text: white;
-  --line: #c4c4c4;
-  background: var(--background);
-  color: var(--text);
+  color: white;
   max-width: 1400px;
-  margin: -50px auto;
+  margin: -20px auto;
   padding: 20px;
 }
 
@@ -36,7 +32,7 @@ body {
   position: absolute;
   top: 50%;
   width: 100%;
-  border-top: 3px solid var(--text);
+  border-top: 3px solid white;
   left: 11px;
 }
 
@@ -44,8 +40,6 @@ body {
   content: "\f04b";
   font-family: 'Font Awesome 5 Free';
   font-weight: 900;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
   font-style: normal;
   font-variant: normal;
   text-rendering: auto;
@@ -56,25 +50,24 @@ body {
   margin-top: 1px;
   right: -15px;
   font-size: 25px;
-  color: var(--accent);
+  color:rgb(13,110,253);
 }
 
 .timeline ul li {
-  --circle-size: 15px;
   grid-column: var(--index);
   overflow: hidden;
   position: relative;
-  height: calc(100% + var(--circle-size) * 0.5);
+  height: calc(100% + 15px * 0.5);
 }
 
 .timeline ul li:after {
   content: '';
-  width: var(--circle-size);
-  height: var(--circle-size);
-  background: var(--line);
+  width: 15px;
+  height: 15px;
+  background: #c4c4c4;
   position: absolute;
   bottom: 0;
-  left: var(--circle-size);
+  left: 15px;
   border-radius: 100px;
   transform: translateX(-50%);
   z-index: 1;
@@ -91,18 +84,18 @@ body {
   flex-direction: column;
   align-items: flex-start;
   padding-top: 40px;
-  margin-top: calc(var(--circle-size) * -0.45);
+  margin-top: calc(15px * -0.45);
 }
 
 .timeline ul li:nth-child(odd) p:after,
 .timeline ul li:nth-child(even) h3:before {
   content: "";
   display: block;
-  border-left: 2px dashed var(--text);
+  border-left: 2px dashed white;
   height: 100vh;
   margin-top: 10px;
   position: absolute;
-  left: calc(var(--circle-size) - 1px);
+  left: calc(15px - 1px);
 }
 
 .timeline ul li:nth-child(even) h3:before {
@@ -111,11 +104,11 @@ body {
 }
 
 .timeline ul li>* {
-  padding-left: calc(var(--circle-size) * 0.4);
+  padding-left: calc(15px * 0.4);
 }
 
 .timeline ul li h3 {
-  color: var(--accent);
+  color: rgb(13,110,253);
   margin: 0;
   margin-bottom: 5px;
   font-size: 1.6em;
@@ -128,7 +121,7 @@ body {
   text-wrap: pretty;
 }
 
-@media (max-width: 568px) {
+@media (max-width: 808px) {
   .timeline ul {
     display: flex;
     flex-direction: column;
@@ -158,10 +151,10 @@ body {
   .timeline ul li p:after {
     content: "";
     display: block;
-    border-left: 2px dashed var(--text);
+    border-left: 2px dashed white;
     height: 100vh;
     margin-top: 10px;
     position: absolute;
-    left: calc(var(--circle-size) - 1px);
+    left: calc(15px - 1px);
   }
 }

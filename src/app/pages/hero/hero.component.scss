@@ -9,9 +9,8 @@ p {
 
 .btn {
   color: white;
-  border-color: aliceblue;
+  border-color: white;
 }
-
 
 .hero-section {
  position: relative;
@@ -57,9 +56,8 @@ p {
   }
 }
 
-/* Ensure the icon is visible on small screens */
-@media (max-width: 768px) {
+@media (max-width: 1008px) {
   .scroll-down {
-    font-size: 20px; /* Adjust size as needed for smaller screens */
+    display: none;
   }
 }
