@@ -13,41 +13,29 @@ import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angula
 export class ContactComponent {
   contactForm: FormGroup;
 
-  constructor(private fb: FormBuilder, private http: HttpClient) {
-
-  this.contactForm = this.fb.group({
-    name: ['', Validators.required],
-    email: ['', [Validators.required, Validators.email]],
-    company: ['', Validators.required],
-    phone: ['', Validators.required],
-    message: ['', Validators.required]
-  });
-}
-
-onSubmit() {
-  if (this.contactForm.valid) {
-    const formData = new HttpParams()
-      .set('form-name', 'MyContact')
-      .set('name', this.contactForm.get('name')?.value)
-      .set('email', this.contactForm.get('email')?.value)
-      .set('company', this.contactForm.get('company')?.value)
-      .set('phone', this.contactForm.get('phone')?.value)
-      .set('message', this.contactForm.get('message')?.value);
-
-    const headers = new HttpHeaders().set('Content-Type', 'application/x-www-form-urlencoded');
-
-    this.http.post('/', formData.toString(), { headers }).subscribe(
-      response => {
-        // Handle successful submission here
-        console.log('Form successfully submitted', response);
-        // Redirect or show a success message
-      },
-      error => {
-        // Handle submission error here
-        console.error('Form submission error', error);
-      }
-    );
+  constructor(private fb: FormBuilder) {
+    this.contactForm = this.fb.group({
+      name: ['', Validators.required],
+      email: ['', [Validators.required, Validators.email]],
+      company: ['', Validators.required],
+      phone: ['', Validators.required],
+      message: ['', Validators.required]
+    });
   }
-}
+
+  onSubmit(): void {
+    if (this.contactForm.valid) {
+      const form = document.forms.namedItem("contact") as HTMLFormElement;
+      const formData = new FormData(form);
+
+      // Manually trigger form submission to Netlify
+      fetch("/", {
+        method: "POST",
+        body: formData,
+      })
+      .then(() => alert("Form successfully submitted"))
+      .catch(error => alert("Form submission error: " + error));
+    }
+  }
 
 }
