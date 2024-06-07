@@ -25,15 +25,7 @@ export class ContactComponent {
 
   onSubmit(): void {
     if (this.contactForm.valid) {
-      const form = document.forms.namedItem("contact") as HTMLFormElement;
-      const formData = new FormData(form);
-
-      // Manually trigger form submission to Netlify
-      fetch("/", {
-        method: "POST",
-        body: formData,
-      })
-    
+     
     }
   }
 
