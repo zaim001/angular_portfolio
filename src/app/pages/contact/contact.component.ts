@@ -11,7 +11,7 @@ import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angula
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
-  contactForm: FormGroup;
+ contactForm: FormGroup;
 
   constructor(private fb: FormBuilder) {
     this.contactForm = this.fb.group({
@@ -33,8 +33,7 @@ export class ContactComponent {
         method: "POST",
         body: formData,
       })
-      .then(() => alert("Form successfully submitted"))
-      .catch(error => alert("Form submission error: " + error));
+    
     }
   }
 
