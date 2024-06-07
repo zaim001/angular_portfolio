@@ -28,12 +28,10 @@ export class ContactComponent {
       const form = document.forms.namedItem("contact") as HTMLFormElement;
       const formData = new FormData(form);
 
-
       fetch("/", {
         method: "POST",
         headers: {
           "Content-Type": "application/x-www-form-urlencoded",
-          "Accept": "text/html"
         },
         body: formData,
       })
