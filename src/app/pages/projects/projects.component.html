@@ -7,9 +7,9 @@
         <!--<img class="card-img-top" [src]="project.image" alt="Project image">-->
           <div class="card-body">
             <h5 class="card-title">{{ project.project }}</h5>
-                <div class="btn-group">
+                <div class="btn-group flex-wrap">
                     @for (stack of project.stack; track $index){
-                <a [href]="project.website" class="btn btn-sm btn-outline-secondary">{{stack}}</a>
+                <a [href]="project.website" class="btn btn-outline-secondary" style="pointer-events: none">{{stack}}</a>
                     }
               </div>
             <p class="card-text">{{ project.description }}</p>
