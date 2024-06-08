@@ -3,6 +3,7 @@ export interface Project {
   stack: string[];
   description: string;
   website: string;
+  report: string,
   github: string;
   image: string;
   status: string;

@@ -15,9 +15,16 @@
             <p class="card-text">{{ project.description }}</p>
             <div class="d-flex justify-content-between align-items-center">
               <div>
-                <span>
-                    <a [href]="project.website">Website</a>
-                </span>
+                @if (project.website == "") {  
+                  <span>
+                    <a [href]="project.report">Report</a>
+                </span>   
+            }
+            @else {
+              <span>
+                <a [href]="project.website">Website</a>
+            </span>
+            }
                 <span>
                     <a [href]="project.github" style="color: #739150;">GitHub</a>
                 </span>
