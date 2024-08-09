@@ -2,7 +2,7 @@
     <h1>Experience</h1>
     <div class="main-timeline">
             @for (exp of experiences; track $index;let count = $count) {
-                            <!-- start experience section-->
+                         
                             @if (isOdd($index)) {
 <div class="timeline">
                                 <div class="icon"></div>
@@ -23,9 +23,7 @@
                             
                             </div>
 }
-                            <!-- end experience section-->
-                            
-                            <!-- start experience section -->
+                      
                             @if (!isOdd($index)) {
 <div class="timeline">
                                 <div class="icon"></div>

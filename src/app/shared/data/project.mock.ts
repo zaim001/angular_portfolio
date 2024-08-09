@@ -10,7 +10,7 @@ export const PROJECTS: Project[] = [
     website: "",
     report: "assets/reports/CAS.pdf",
     github: "https://github.com/zaim001/SSO-using-CAS",
-    image:"https://s3-us-west-2.amazonaws.com/s.cdpn.io/326643/Sample%20Logo.png",
+    image:"./assets/images/cas.jpg",
     status: "Live"
   },
   {
@@ -20,7 +20,7 @@ export const PROJECTS: Project[] = [
     website: "#",
     report: "",
     github: "https://github.com/zaim001/findMyJob",
-    image:"https://s3-us-west-2.amazonaws.com/s.cdpn.io/326643/sample%20logo%202.png",
+    image:"./assets/images/scrapper.png",
     status: "Live"
   },
   {
@@ -30,16 +30,16 @@ export const PROJECTS: Project[] = [
     website: "https://badreddinezaim.netlify.app",
     report: "",
     github: "https://github.com/zaim001/angular_portfolio",
-    image:"https://s3-us-west-2.amazonaws.com/s.cdpn.io/326643/Sample%20Logo.png",
+    image:"./assets/images/hero.png",
     status: "Live"
   },
   {
-    project: "Soon",
-    stack: ["", ""],
-    description:"",
+    project: "MyShop",
+    stack: ["Angular", "Spring Boot","Keycloak","PostgreSql","Scss"],
+    description:"Full Stack E-commerce app using Spring boot Backend + Angular Frontend & Keyclaok for identity and access management",
     website: "#",
     report: "",
-    github: "#",
+    github: "https://github.com/zaim001/angular_portfolio",
     image:"https://s3-us-west-2.amazonaws.com/s.cdpn.io/326643/sample%20logo%202.png",
     status: "InDev"
   },
@@ -53,5 +53,6 @@ export const PROJECTS: Project[] = [
     image:"https://s3-us-west-2.amazonaws.com/s.cdpn.io/326643/sample%20logo%202.png",
     status: "InDev"
   },
+
   
 ];

@@ -6,30 +6,30 @@ h1{
 .container-icons {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Center the icons */
-  width: 70%; /* Set container width to 70% */
-  margin: 0 auto; /* Center the container horizontally */
+  justify-content: center; 
+  width: 70%;
+  margin: 0 auto; 
   margin-bottom: 3rem;
   color: #fff;
 
 }
 
-/* Individual icon boxes */
+
 .box-icon {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  flex: 1 1 calc(20% - 10px); /* 20% width for 5 items per row, minus gap */
+  flex: 1 1 calc(20% - 10px); 
   
 }
 
 /* Icons */
 .box-icon i,
 .container-img-i img {
-  font-size: 50px; /* Adjust icon size as needed */
-  margin-bottom: 10px; /* Space between icon and text */
+  font-size: 50px; 
+  margin-bottom: 10px; 
 }
 
 

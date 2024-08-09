@@ -1,10 +1,11 @@
 h1 {
   color: white;
   margin-bottom: 20px;
+  font-family:OCR A Std, monospace;
 }
-
 p {
   color: white;
+ font-family:Courier New, monospace ;
 }
 
 .btn {
@@ -34,12 +35,12 @@ p {
 }
 .scroll-down {
   position: absolute;
-  bottom: 150px; /* Adjust based on your design */
+  bottom: 150px; 
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
-  font-size: 24px; /* Adjust size as needed */
-  color: white; /* Adjust color as needed */
+  font-size: 24px; 
+  color: white;
   animation: bounce 2s infinite;
   cursor: pointer;
 }
