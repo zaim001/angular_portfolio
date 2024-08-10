@@ -39,8 +39,8 @@ export const PROJECTS: Project[] = [
     description:"Full Stack E-commerce app using Spring boot Backend + Angular Frontend & Keyclaok for identity and access management",
     website: "#",
     report: "",
-    github: "https://github.com/zaim001/angular_portfolio",
-    image:"https://s3-us-west-2.amazonaws.com/s.cdpn.io/326643/sample%20logo%202.png",
+    github: "https://github.com/zaim001/MyShop",
+    image:"./assets/images/myshop.png",
     status: "InDev"
   },
   {

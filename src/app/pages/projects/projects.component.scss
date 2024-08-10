@@ -14,7 +14,8 @@ p{
 }
 .card {
   background-color: transparent;
-  border-color:white ;
+  border:#eee solid;
+   
   a {
     padding-right: 15px;
     text-decoration: none;
@@ -23,7 +24,7 @@ p{
 .btn{
   margin-right:4px ;
   color: white;
-  border-radius: 0;
+  border-radius: 1;
 
  
 }

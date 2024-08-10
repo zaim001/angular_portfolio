@@ -7,12 +7,13 @@ import { HeroComponent } from '../hero/hero.component';
 import { ContactComponent } from '../contact/contact.component';
 import { EXPERIENCES } from '../../shared/data/experience.mock';
 import { Experience } from '../../models/experience';
+import { CertsComponent } from "../certs/certs.component";
 
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [HeroComponent,StudiesComponent,ExperiencesComponent,SkillsComponent,ProjectsComponent,ContactComponent],
+  imports: [HeroComponent, StudiesComponent, ExperiencesComponent, SkillsComponent, ProjectsComponent, ContactComponent, CertsComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
