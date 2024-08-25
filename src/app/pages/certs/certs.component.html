@@ -1,41 +1,25 @@
 <div class="container mt-5" id="certificates">
   <h1>Certificates</h1>
   <div class="row">
+    @for (cert of certs; track cert) {
       <div class="col-md-4">
           <div class="card p-3 mb-2">
               <div class="d-flex justify-content-between">
                   <div class="d-flex flex-row align-items-center">
-                      <div class="icon"> <img src="../../assets/images/cr.jpg"></div>
+                      <div class="icon"> <img [src]="cert.image"></div>
                       <div class="ms-2 c-details">
-                          <h6 class="mb-0">Issued Date</h6> <span>Oct 10, 2023</span>
+                          <h6 class="mb-0">Issued Date</h6> <span>{{cert.issued_date}}</span>
                       </div>
                   </div>
-                   <div class="badge"><a href="https://www.coursera.org/account/accomplishments/certificate/2K72S2C6QQA6" target="_blank">Show Credential</a></div>
+                   <div class="badge"><a [href]="cert.link" target="_blank">Show Credential</a></div>
               </div>
               <div class="mt-5">
-                  <h3 class="heading" style="color: aliceblue;">Python for Data Science,<br>AI & Development</h3>
+                  <h3 class="heading" style="color: aliceblue;">{{cert.title}}</h3>
                   <div class="mt-5">
                   </div>
               </div>
           </div>
       </div>
-      <div class="col-md-4">
-        <div class="card p-3 mb-2">
-            <div class="d-flex justify-content-between">
-                <div class="d-flex flex-row align-items-center">
-                    <div class="icon"> <img src="../../assets/images/cr.jpg"></div>
-                    <div class="ms-2 c-details">
-                        <h6 class="mb-0">Issued Date</h6> <span>Oct 10, 2023</span>
-                    </div>
-                </div>
-                 <div class="badge"><a href="https://www.coursera.org/account/accomplishments/certificate/R6KH7W5NJK42" target="_blank">Show Credential</a></div>
-            </div>
-            <div class="mt-5">
-                <h3 class="heading" style="color: aliceblue;">Blockchain Basics<br></h3>
-                <div class="mt-5">
-                </div>
-            </div>
-        </div>
-    </div>
+    }
   </div>
 </div>
