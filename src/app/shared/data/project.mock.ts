@@ -44,6 +44,16 @@ export const PROJECTS: Project[] = [
     status: "InDev"
   },
   {
+    project: "MovGame",
+    stack: ["Angular", "Spring Boot","PostgreSql","Tailwind","Youtube Api","Gemini Api"],
+    description:"Recommending games based on user input of movies or TV shows. using Gemini Api to handle user prompt then show games and game details with the Rawg Api & Youtube Api",
+    website: "#",
+    report: "",
+    github: "https://github.com/zaim001/MovGame",
+    image:"./assets/images/movgame.png",
+    status: "InDev"
+  },
+  {
     project: "Soon",
     stack: ["", ""],
     description:"",
