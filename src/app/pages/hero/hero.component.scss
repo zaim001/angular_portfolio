@@ -1,13 +1,15 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bungee+Hairline');
 
 h1 {
+  font-size: 50px;
   color: white;
   margin-bottom: 20px;
-  font-family:OCR A Std, monospace;
+  font-family:"Bungee Hairline"
 }
 p {
   color: white;
- font-family:Courier New, monospace ;
+  font-family: "Montserrat", sans-serif;
 }
 
 .btn {

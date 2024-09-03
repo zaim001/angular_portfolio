@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+
 
 @Component({
   selector: 'app-background',
@@ -8,5 +9,6 @@ import { Component } from '@angular/core';
   styleUrl: './background.component.scss'
 })
 export class BackgroundComponent {
+
 
 }
