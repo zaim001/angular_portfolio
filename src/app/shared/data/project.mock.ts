@@ -30,7 +30,7 @@ export const PROJECTS: Project[] = [
     website: "https://badreddinezaim.netlify.app",
     report: "",
     github: "https://github.com/zaim001/angular_portfolio",
-    image:"./assets/images/hero.png",
+    image:"./assets/images/portfolio.png",
     status: "Live"
   },
   {
@@ -47,7 +47,7 @@ export const PROJECTS: Project[] = [
     project: "MovGame",
     stack: ["Angular", "Spring Boot","PostgreSql","Tailwind","Youtube Api","Gemini Api"],
     description:"Recommending games based on user input of movies or TV shows. using Gemini Api to handle user prompt then show games and game details with the Rawg Api & Youtube Api",
-    website: "#",
+    website: "https://movigames.netlify.app",
     report: "",
     github: "https://github.com/zaim001/MovGame",
     image:"./assets/images/movgame.png",

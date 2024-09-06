@@ -2,8 +2,8 @@
 .timeline {
   color: white;
   max-width: 1400px;
-  margin: -20px auto;
-  padding: 80px;
+  margin: -80px auto;
+  padding: 40px;
 }
 
 .timeline h1 {
@@ -118,10 +118,14 @@
 }
 
 @media (max-width: 808px) {
+  h1{
+    margin-top: 60px;
+  }
   .timeline ul {
     display: flex;
     flex-direction: column;
     width: 100%;
+    
   }
   .timeline ul li {
     grid-column: 1 !important;
@@ -152,5 +156,10 @@
     margin-top: 10px;
     position: absolute;
     left: calc(15px - 1px);
+  }
+}
+@media (max-width: 1500px) {
+  h1{
+    margin-top: 60px;
   }
 }

@@ -1,6 +1,17 @@
 
 nav {
  padding: 20px 0; 
+ position: sticky;
+ z-index: 1000;
+}
+.menu-toggle {
+  display: none;
+  font-size: 1.5em;
+  cursor: pointer;
+  color: #fff;
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 
 /* Navigation List */
@@ -36,6 +47,7 @@ nav ul li a i {
   font-size: 1em;
   display: flex;
   align-items: center;
+  z-index:1000;
 }
 
 
@@ -59,13 +71,30 @@ nav ul li a:hover {
 }
 
 
-@media screen and (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    align-items: center;
+@media screen and (max-width: 800px) {
+  .menu-toggle {
+    display: block;
   }
   
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    display: none;
+    width: 200px;
+  }
+
   nav ul li {
     margin: 5px 0;
+  }
+
+  /* Show menu when toggled */
+  nav ul.show-menu {
+    display: block;
   }
 }

@@ -22,21 +22,26 @@ p {
  top:0;
 
   .container {
-    font-family: Calibre, system-ui, BlinkMacSystemFont, Roboto, Helvetica Neue, Segoe UI, Arial, sans-serif;
     display: flex;
     justify-content: flex-start;
     margin-top: -200px;
-    
   }
 }
 
 /* Adjust margin for smaller screens if needed */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .hero-section {
-    padding-top: 20px; /* Adjust margin for smaller screens */
-    margin-top: 20px;
+    position: relative;
+    left:0;
+    padding: 30px 10px; /* Adjust margin for smaller screens */
+    margin: 30px -45px;
+    display: flex;
+    justify-content: flex-start;
+    
   }
 }
+
+
 .scroll-down {
   position: absolute;
   bottom: 150px; 
@@ -61,7 +66,13 @@ p {
   }
 }
 
-@media (max-width: 1008px) {
+@media (max-width: 1500px) {
+  .hero-section {
+    padding-top: 80px;
+    position: relative;
+    top: 50px;
+    height: calc(100% - 300px);
+  }
   .scroll-down {
     display: none;
   }

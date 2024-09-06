@@ -1,9 +1,10 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss'
 })
@@ -11,4 +12,8 @@ import { Component } from '@angular/core';
 
 export class NavbarComponent {
 
+     toggled : boolean= false;
+  toggle(){
+    this.toggled = !this.toggled 
+  }
 }
