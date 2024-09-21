@@ -1,8 +1,12 @@
 
 nav {
  padding: 20px 0; 
- position: sticky;
+ position: relative;
+ top: 0;
+ right: 0;
+ left: 0;
  z-index: 1000;
+ display: block;
 }
 .menu-toggle {
   display: none;
