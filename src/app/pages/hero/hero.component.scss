@@ -16,6 +16,9 @@ p {
   object-fit: cover;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
 }
+.btn-link{
+  cursor:default;
+}
 
 
 .container{
@@ -46,18 +49,13 @@ p {
     transform: translateY(-5px);
   }
 }
-@media (max-width:1500px) {
-  .scroll-down{
-    display: none;
-  }
-  
-}
+
 @media all and (min-device-width:1920px){
   .container{
-    margin: 8% auto;
+    margin: 6% auto;
   }
   .scroll-down{
-    margin: 12% auto;
+    margin: 0 auto;
   }
 
 }
