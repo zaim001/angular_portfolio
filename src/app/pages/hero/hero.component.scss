@@ -52,3 +52,12 @@ p {
   }
   
 }
+@media all and (min-device-width:1920px){
+  .container{
+    margin: 8% auto;
+  }
+  .scroll-down{
+    margin: 12% auto;
+  }
+
+}

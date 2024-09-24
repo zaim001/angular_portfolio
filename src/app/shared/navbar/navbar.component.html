@@ -1,14 +1,14 @@
-
-<section><nav>
+<nav>
   <div class="menu-toggle" (click)="toggle()">
     <i class="fas fa-bars"></i>
   </div>
-    <ul [ngClass]="{'show-menu': toggled}">
-      <li><a href="#hero"><i class="fas fa-globe-americas"></i> About</a></li>
-      <li><a href="#skills"><i class="fas fa-sun"></i>Skills</a></li>
-      <li><a href="#projects"><i class="far fa-moon"></i>Projects</a></li>
-      <li><a href="#certificates"><i class="fas fa-globe"></i>Certificates</a></li>
-      <li><a href="#contact"><i class="far fa-star"></i>Contact</a></li>
-      <li><a href="assets/cv/MyCv.pdf"><i class="fas fa-meteor"></i>CV</a></li>
-    </ul>
-</nav></section>
+  <ul [ngClass]="{'show-menu': toggled}">
+    <li><a [routerLink]="['/']" [queryParams]="{ fragment: 'about' }"><i class="fas fa-globe-americas"></i> About</a></li>
+    <li><a [routerLink]="['/']" [queryParams]="{ fragment: 'skills' }"><i class="fas fa-sun"></i>Skills</a></li>
+    <li><a [routerLink]="['/']" [queryParams]="{ fragment: 'projects' }"><i class="far fa-moon"></i>Projects</a></li>
+    <li><a [routerLink]="['/']" [queryParams]="{ fragment: 'certificates' }"><i class="fas fa-globe"></i>Certificates</a></li>
+    <li><a [routerLink]="['/']" [queryParams]="{ fragment: 'contact' }"><i class="far fa-star"></i>Contact</a></li>
+    <li><a href="assets/cv/MyCv.pdf" target="_blank"><i class="fas fa-meteor"></i>CV</a></li>
+  </ul>
+</nav>
+

@@ -7,11 +7,12 @@ html, body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;  
+  scroll-behavior: smooth;
 }
 @media (max-width: 768px) {
   section {
-    margin-bottom: 0; /* Adjust as needed for smaller screens */
-    padding: 0; /* Adjust as needed for smaller screens */
+    margin-bottom: 0; 
+    padding: 0; 
   }
 } 
 
