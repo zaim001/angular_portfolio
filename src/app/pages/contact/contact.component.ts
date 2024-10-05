@@ -13,7 +13,7 @@ import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angula
 export class ContactComponent {
   contactForm: FormGroup;
 
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: FormBuilder, private http : HttpClient) {
     this.contactForm = this.fb.group({
       name: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
@@ -23,22 +23,31 @@ export class ContactComponent {
     });
   }
 
+  
   onSubmit(): void {
     if (this.contactForm.valid) {
-      const form = document.forms.namedItem("contact") as HTMLFormElement;
-      const formData = new FormData(form);
+      const formData = new URLSearchParams();
+      for (const key in this.contactForm.value) {
+        formData.append(key, this.contactForm.value[key]);
+      }
+      formData.append('form-name', 'contact'); 
 
-
-      fetch("/", {
-        method: "POST",
+      this.http.post('/', formData.toString(), {
         headers: {
-          "Content-Type": "application/x-www-form-urlencoded",
-          "Accept": "text/html"
+          'Content-Type': 'application/x-www-form-urlencoded',
+          'Accept': 'text/html'
         },
-        body: formData,
-      })
-      .then(() => alert("Form successfully submitted"))
-      .catch(error => alert("Form submission error: " + error));
+        responseType: 'text'
+      }).subscribe({
+        next: () => {
+          alert('Form successfully submitted');
+          this.contactForm.reset();
+        },
+        error: (error) => {
+          console.error('Form submission error:', error);
+          alert('Form submission error. Please try again.');
+        }
+      });
     }
   }
 }
