@@ -19,7 +19,8 @@ export const STUDIES: Education[] = [
     },
     {
         date:"2024-2026",
-        school:"?",
-        major:"?",
+        school:"Vistula University",
+        major:"Computer Engineering",
     },
+    
 ]
